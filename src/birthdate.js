@@ -4,9 +4,9 @@ class Birthdate {
   }
 
   ageConvert() {
-    let date = new Date();
-    let endDate = date.getTime();
-    let ageCalculation = Math.round(endDate / years);
+    let startdate = new Date(birthdate);
+    let endDate = Date.now();
+    let ageCalculation = endDate - startdate;
     return ageCalculation;
 
   }
