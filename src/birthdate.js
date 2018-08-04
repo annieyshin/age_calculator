@@ -7,12 +7,8 @@ class Birthdate {
     let today = new Date();
     let dob = new Date(this.birthdate);
     let totalAge = today.getFullYear() - dob.getFullYear();
-
     return totalAge;
-
   }
-
-
 
 }
 
