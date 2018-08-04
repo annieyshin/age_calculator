@@ -63,7 +63,8 @@ class Birthdate {
     let today = new Date();
     let dob = new Date(this.birthdate);
     let ageInYears = today.getFullYear() - dob.getFullYear();
-    return -(ageInYears - averageLifeExpetancy);
+    let timeLeft =  -(ageInYears - averageLifeExpetancy);
+    return +(Math.round(timeLeft + "e+2")  + "e-2");
   }
 
 }
