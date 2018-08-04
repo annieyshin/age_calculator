@@ -34,6 +34,16 @@ describe('Birthdate', function() {
     expect(newBirthdate.jupiterConvert()).toEqual(450.68);
   });
 
+  it('should return the average number of years a person can expect to live for by inputted birthdate', function() {
+    let newBirthdate = new Birthdate("1980-08-08");
+    expect(newBirthdate.lifeExpectancy()).toEqual(40.7);
+  });
+
+  it('should return the average number of years a person has lived past USA average life expectancy by inputted birthdate', function() {
+    let newBirthdate = new Birthdate("1940-08-08");
+    expect(newBirthdate.yearsLeft()).toEqual(0.7);
+  });
+
 });
 
 import { Birthdate } from './../src/birthdate.js';

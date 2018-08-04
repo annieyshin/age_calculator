@@ -50,6 +50,22 @@ class Birthdate {
     return +(Math.round(jupiterAge + "e+2")  + "e-2");
   }
 
+  lifeExpectancy() {
+    const averageLifeExpetancy = 78.7;
+    let today = new Date();
+    let dob = new Date(this.birthdate);
+    let ageInYears = today.getFullYear() - dob.getFullYear();
+    return averageLifeExpetancy - ageInYears;
+  }
+
+  yearsLeft() {
+    const averageLifeExpetancy = 78.7;
+    let today = new Date();
+    let dob = new Date(this.birthdate);
+    let ageInYears = today.getFullYear() - dob.getFullYear();
+    return -(ageInYears - averageLifeExpetancy);
+  }
+
 }
 
 export { Birthdate };
