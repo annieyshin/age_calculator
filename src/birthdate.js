@@ -22,8 +22,8 @@ class Birthdate {
     let today = new Date();
     let dob = new Date(this.birthdate);
     let ageInYears = today.getFullYear() - dob.getFullYear();
-    let marsAge = ageInYears * .24;
-    return marsAge;
+    let mercuryAge = ageInYears * .24;
+    return +(Math.round(mercuryAge + "e+2")  + "e-2");
   }
 
   venusConvert() {
@@ -31,7 +31,7 @@ class Birthdate {
     let dob = new Date(this.birthdate);
     let ageInYears = today.getFullYear() - dob.getFullYear();
     let venusAge = ageInYears * .62;
-    return venusAge;
+    return +(Math.round(venusAge + "e+2")  + "e-2");
   }
 
   marsConvert() {
@@ -39,15 +39,15 @@ class Birthdate {
     let dob = new Date(this.birthdate);
     let ageInYears = today.getFullYear() - dob.getFullYear();
     let marsAge = ageInYears * 1.88;
-    return marsAge;
+    return +(Math.round(marsAge + "e+2")  + "e-2");
   }
 
   jupiterConvert() {
     let today = new Date();
     let dob = new Date(this.birthdate);
     let ageInYears = today.getFullYear() - dob.getFullYear();
-    let jupiterAge = ageInYears * 11.86;
-    return jupiterAge;
+    let jupiterAge = (ageInYears * 11.86).toFixed(2);
+    return +(Math.round(jupiterAge + "e+2")  + "e-2");
   }
 
 }
