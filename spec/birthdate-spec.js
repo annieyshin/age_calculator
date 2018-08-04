@@ -14,6 +14,15 @@ describe('Birthdate', function() {
     expect(newBirthdate.ageSecondsConvert()).toEqual(883594656);
   });
 
+  it('should return the age of a person in Mercury years by inputted birthdate', function() {
+    let newBirthdate = new Birthdate("1980-08-08");
+    expect(newBirthdate.mercuryConvert()).toEqual(9.12);
+  });
+
+  it('should return the age of a person in Venus years by inputted birthdate', function() {
+    let newBirthdate = new Birthdate("1980-08-08");
+    expect(newBirthdate.venusConvert()).toEqual(23.56);
+  });
 
 });
 
