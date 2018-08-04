@@ -27,3 +27,7 @@ body {
   color: gold;
   padding-left: 30px;
 }
+
+#solution {
+  display: none;
+}

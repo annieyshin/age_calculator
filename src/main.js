@@ -8,10 +8,11 @@ import { Birthdate } from './birthdate.js';
 $(document).ready(function() {
   $('#age-form').submit(function(event) {
     event.preventDefault();
-    let birthdate = $('#birthdate');
-    let output = ageYearConvert(birthdate);
+    let dob = $('#birthdate');
+    console.log(dob);
+    let output = ageYearConvert(dob);
     output.forEach(function(element) {
-      $('#earthYears').append("<li>" + element + "</li>");
+      $('#solution').show();
     });
   });
 });
