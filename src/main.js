@@ -6,13 +6,10 @@ import { Birthdate } from './birthdate.js';
 
 
 $(document).ready(function() {
-  $('#age-form').submit(function(event) {
+  $('form#age-form').submit(function(event) {
     event.preventDefault();
-    let dob = $('#birthdate');
-    console.log(dob);
-    let output = ageYearConvert(dob);
-    output.forEach(function(element) {
-      $('#solution').show();
-    });
+    let dob = new Date($('#birthdate').val());
+    let result = Birthdate.ageYearConvert(dob);
+    $('#solution').text(result);
   });
 });

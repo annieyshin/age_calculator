@@ -4,8 +4,8 @@ body {
 
 .container {
   border: 3px solid blue;
-  background-color: black;
-  color: white;
+  background-color: yellow;
+  color: blue;
   padding: 10px;
   margin: 12px;
   width: 90%;
@@ -16,18 +16,16 @@ body {
 }
 
 .jumbotron {
-  color: darkblue;
+  color: navy;
   font-size: 32pt;
   font-weight: bold;
-  font-family: fantasy;
 }
 
 #age-form {
   font-size: 20pt;
-  color: gold;
+  color: orange;
   padding-left: 30px;
 }
 
 #solution {
-  display: none;
 }
