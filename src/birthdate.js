@@ -4,10 +4,11 @@ class Birthdate {
   }
 
   ageConvert() {
-    let startdate = new Date(birthdate);
-    let endDate = Date.now();
-    let ageCalculation = endDate - startdate;
-    return ageCalculation;
+    let today = new Date();
+    let dob = new Date(this.birthdate);
+    let totalAge = today.getFullYear() - dob.getFullYear();
+
+    return totalAge;
 
   }
 
