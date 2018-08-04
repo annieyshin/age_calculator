@@ -6,19 +6,23 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <p>Super Galactic Age Calculator</p>
+      </div>
       <div class="row">
         <form id="age-form">
-          <label for="birthdate">Enter a birthdate:</label>
+          <label for="birthdate">Enter a date of birth:</label>
+          <br>
           <input id="birthdate" type="date">
-          <button type="submit">Submit</button>
+          <button type="submit" class="btn btn-success">Submit</button>
         </form>
       </div>
-
+      <br>
       <div class="row">
-        <p>Your age in years on Earth: $<span id="earthYears"></span></p>
-
+        <div class="col-lg-12">
+          <p>Your age in years on Earth: <span id="earthYears"></span></p>
+        </div>
       </div>
-
       <div class="row">
         <div class="col-md-6">
           <p>Ever wonder how old you would be on Mercury?</p>

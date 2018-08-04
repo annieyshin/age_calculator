@@ -3,8 +3,27 @@ body {
 }
 
 .container {
-  border: 3px solid yellow;
-  background-color: blue;
+  border: 3px solid blue;
+  background-color: black;
   color: white;
-  padding: 8px;
+  padding: 10px;
+  margin: 12px;
+  width: 90%;
+}
+
+.row {
+  padding: 5px;
+}
+
+.jumbotron {
+  color: darkblue;
+  font-size: 32pt;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+#age-form {
+  font-size: 20pt;
+  color: gold;
+  padding-left: 30px;
 }
