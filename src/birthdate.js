@@ -3,13 +3,22 @@ class Birthdate {
     this.birthdate = birthdate;
   }
 
-  ageConvert() {
+  ageYearConvert() {
     let today = new Date();
     let dob = new Date(this.birthdate);
-    let totalAge = today.getFullYear() - dob.getFullYear();
-    return totalAge;
+    let ageInYears = today.getFullYear() - dob.getFullYear();
+    return ageInYears;
+
   }
 
+  ageSecondsConvert() {
+    let today = new Date();
+    let dob = new Date(this.birthdate);
+    let ageInYears = today.getFullYear() - dob.getFullYear();
+    let ageInSeconds = ageInYears * 31556952
+    return ageInSeconds;
+  }
+  
 }
 
 export { Birthdate };
