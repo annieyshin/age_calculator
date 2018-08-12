@@ -19,20 +19,20 @@ describe('Birthdate', function() {
     expect(newBirthdate.mercuryConvert()).toEqual(9.12);
   });
 
-  it('should return the age of a person in Venus years by inputted birthdate', function() {
-    let newBirthdate = new Birthdate("1980-08-08");
-    expect(newBirthdate.venusConvert()).toEqual(23.56);
-  });
-
-  it('should return the age of a person in Mars years by inputted birthdate', function() {
-    let newBirthdate = new Birthdate("1980-08-08");
-    expect(newBirthdate.marsConvert()).toEqual(71.44);
-  });
-
-  it('should return the age of a person in Jupiter years by inputted birthdate', function() {
-    let newBirthdate = new Birthdate("1980-08-08");
-    expect(newBirthdate.jupiterConvert()).toEqual(450.68);
-  });
+  // it('should return the age of a person in Venus years by inputted birthdate', function() {
+  //   let newBirthdate = new Birthdate("1980-08-08");
+  //   expect(newBirthdate.venusConvert()).toEqual(23.56);
+  // });
+  //
+  // it('should return the age of a person in Mars years by inputted birthdate', function() {
+  //   let newBirthdate = new Birthdate("1980-08-08");
+  //   expect(newBirthdate.marsConvert()).toEqual(71.44);
+  // });
+  //
+  // it('should return the age of a person in Jupiter years by inputted birthdate', function() {
+  //   let newBirthdate = new Birthdate("1980-08-08");
+  //   expect(newBirthdate.jupiterConvert()).toEqual(450.68);
+  // });
 
   it('should return the average number of years a person can expect to live for by inputted birthdate', function() {
     let newBirthdate = new Birthdate("1980-08-08");
