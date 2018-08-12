@@ -8,7 +8,7 @@ import { Birthdate } from './birthdate.js';
 $(document).ready(function() {
   $('form#age-form').submit(function(event) {
     event.preventDefault();
-    let dob = new Date($('#birthdate').val());
+    let dob = new Date($('#birthdate').val(""));
     let result = Birthdate.ageYearConvert(dob);
     $('#solution').text(result);
   });
